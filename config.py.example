@@ -1,0 +1,6 @@
+SERVICE_URL = 'http://127.0.0.1:8080/predict'
+CASCADE_PATH = "lib/haarcascade_frontalface_default.xml"
+IMAGE_SIZE = 64
+IMAGE_DIR = 'data'
+LIB_DIR = 'lib'
+NUM_OF_SELFIES = 100

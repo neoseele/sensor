@@ -9,6 +9,10 @@ scikit-learn==0.17.1
 scipy==0.18.1
 six==1.10.0
 sklearn==0.0
-tensorflow==1.0.1
+tensorflow==1.0.0
 Theano==0.8.2
-opencv-python==3.2.0.6
+#opencv-python==3.2.0.6
+pyfiglet==0.7.5
+requests==2.13.0
+Pillow==4.0.0
+PyQt5==5.8.1.1

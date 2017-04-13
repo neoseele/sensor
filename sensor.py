@@ -106,7 +106,7 @@ def run():
 
 
         # wait for a second
-        k = cv2.waitKey(800)
+        k = cv2.waitKey(200)
         # exit when esc is pressed
         if k == 27:
             break

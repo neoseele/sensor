@@ -37,21 +37,24 @@ def run():
             flags = cv2.CASCADE_SCALE_IMAGE
         )
 
+
         if len(faces) > 0:
             print("Found {0} faces!".format(len(faces)))
 
             for (x, y, w, h) in faces:
                 face = frame[y: y+h, x: x+w]
+                # cv2.imshow('face', face)
+                # cv2.waitKey(500)
 
                 result = model.predict(face)
                 if result == 0:
                     print('Boss is approaching')
                     # show_image()
-                    # cv2.imshow('face', face)
-                    # cv2.waitKey(500)
+                    cv2.imshow('face', face)
+                    cv2.waitKey(500)
 
         # wait for a second
-        k = cv2.waitKey(1000)
+        k = cv2.waitKey(500)
         # exit when esc is pressed
         if k == 27:
             break
